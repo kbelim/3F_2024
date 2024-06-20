@@ -1,12 +1,15 @@
 const botoes = document.querySelectorAll(".botao");
 const conteudo = document.querySelectorAll(".aba-conteudo")
 const contador = document.querySelectorAll(".contador")
-const tempoobjetivo1= new Date(2024,5,14,8,50,0)
-const tempoobjetivo2= new Date (2024,7,22,8,50,0)
-const tempoobjetivo3= new Date (2024,0,1,10,0,0)
-const tempoobjetivo4= new Date (2024,1,1,1,1,1)
-contador[0].textContent="olá"
-
+const tempoobjetivo0= new Date (2025,5,14,8,50,0)
+const tempoobjetivo1= new Date (2025,7,22,8,50,0)
+const tempoobjetivo2= new Date (2025,0,1,10,0,0)
+const tempoobjetivo3= new Date (2024,11,25,0,0,0)
+let agora=new Date();
+contador[0].textContent=tempoobjetivo0-agora
+contador[1].textContent=tempoobjetivo1-agora
+contador[2].textContent=tempoobjetivo2-agora
+contador[3].textContent=tempoobjetivo3-agora
 
 for (let i = 0 ; i < botoes.length ; i++){
     botoes[i].onclick = function (){
