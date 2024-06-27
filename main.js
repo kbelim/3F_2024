@@ -5,22 +5,25 @@ const tempoobjetivo0= new Date (2025,5,14,8,50,0)
 const tempoobjetivo1= new Date (2025,7,22,8,50,0)
 const tempoobjetivo2= new Date (2025,0,1,10,0,0)
 const tempoobjetivo3= new Date (2024,11,25,0,0,0)
-let agora=new Date();
+function calculatempo (tempoobjetivo){
+    let agora=new Date();
 let segundos
 let minutos
 let horas
 let dias
-segundos=(tempoobjetivo0-agora)/1000;
+
+segundos=(tempoobjetivo - agora)/1000;
 minutos=segundos/60
 horas=minutos/60
 dias=horas/24
-
-contador[0].textContent= `Faltam ${dias},${horas} horas,${minutos} minutos e ${segundos} segundos`
-contador[1].textContent=tempoobjetivo1-agora
-contador[2].textContent=tempoobjetivo2-agora
-contador[3].textContent=tempoobjetivo3-agora
-
-
+segundos = Math.floor(segundos);
+minutos = Math.floor(minutos);
+horas = Math.floor(horas);
+dias = Math.floor(dias);
+segundos = segundos%60;
+minutos = minutos%60;
+horas = horas%24;
+}
 
 for (let i = 0 ; i < botoes.length ; i++){
     botoes[i].onclick = function (){
