@@ -23,7 +23,18 @@ dias = Math.floor(dias);
 segundos = segundos%60;
 minutos = minutos%60;
 horas = horas%24;
+return [dias,horas,minutos,segundos]
 }
+let contadorprimeiro = calculatempo(tempoobjetivo0)
+contador[0].textContent =`Faltam ${contadorprimeiro[0]}dias, ${contadorprimeiro[1]}horas,${contadorprimeiro[2]}minutos, ${contadorprimeiro[3]}segundos.`
+console.log(contadorprimeiro)
+let contadorsegundo = calculatempo(tempoobjetivo1)
+contador[1].textContent = `Faltam ${contadorsegundo[0]}dias, ${contadorsegundo[1]}horas,${contadorsegundo[2]}minutos, ${contadorsegundo[3]}segundos.`
+let contadorterceiro = calculatempo(tempoobjetivo2)
+contador[2].textContent = `Faltam ${contadorterceiro[0]}dias, ${contadorterceiro[1]}horas,${contadorterceiro[2]}minutos, ${contadorterceiro[3]}segundos.`
+let contadorquarto = calculatempo(tempoobjetivo3)
+contador[3].textContent = `Faltam ${contadorquarto[0]}dias, ${contadorquarto[1]}horas,${contadorquarto[2]}minutos, ${contadorquarto[3]}segundos.`
+
 
 for (let i = 0 ; i < botoes.length ; i++){
     botoes[i].onclick = function (){
