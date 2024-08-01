@@ -20,7 +20,7 @@ span{
     color: var(--verde);
 }
 
-.conteudoprin{
+.aba-conteudo-principal{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,8 +29,14 @@ span{
     max-width: 1200px;
     margin: 0 auto;
 }
+.contador{
+    padding:0 16px ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 
-.titulo{
+.titulo-principal{
     text-align: center;
     width: 100%;
     font-size: 32px;
@@ -73,8 +79,9 @@ span{
  background-color: var(--botao-inativo);
 }
 .aba-conteudo-principal{
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
+   
 }
 .aba-conteudo-titulo-secundario{
     text-align: center;
