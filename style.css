@@ -20,7 +20,7 @@ span{
     color: var(--verde);
 }
 
-.aba-conteudo-principal{
+.conteudoprin{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,8 +35,17 @@ span{
     display: flex;
     justify-content: center;
 }
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+}
 
-.titulo-principal{
+.titulo{
     text-align: center;
     width: 100%;
     font-size: 32px;
@@ -79,7 +88,7 @@ span{
  background-color: var(--botao-inativo);
 }
 .aba-conteudo-principal{
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
    
 }
